@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="5.0">
+  <servlet>
+    <description></description>
+    <display-name>webproje</display-name>
+    <display-name>Sportservlet</display-name>
+    <servlet-name>Sportservlet</servlet-name>
+    <servlet-class>webprojeweb.Sportservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Sportservlet</servlet-name>
+    <url-pattern>/Sportservlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+   <welcome-file>projet-list.jsp</welcome-file>
+  </welcome-file-list>
+  <error-page>
+  <exception-type>java.lang.Exception</exception-type>
+  <location>/Error.jsp</location>
+  </error-page>
+  <servlet>
+    <description></description>
+    <display-name>SportServlet</display-name>
+    <servlet-name>SportServlet</servlet-name>
+    <servlet-class>webprojeweb.SportServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SportServlet</servlet-name>
+    <url-pattern>/SportServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
